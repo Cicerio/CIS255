@@ -1,0 +1,73 @@
+:root {
+    /* Define CSS variables for gradient colors */
+    --gradient-color-start: #1d1d1d; /* Dark grey */
+    --gradient-color-end: #000; /* Black */
+    font-family: Arial, Helvetica, sans-serif;
+}
+body, html {
+    height: 100%; /* Subtract 40px for top and bottom margins */
+    margin: 0; /* Margin added to all sides */
+    padding: 0;
+    background-color: var(--gradient-color-start);
+    background-image: linear-gradient(to bottom, var(--gradient-color-start), var(--gradient-color-end));
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    height: 40px; /* Adjust the height as needed */
+    font-size: xx-large;
+}
+.left-column, .middle-column, .right-column {
+    flex: 1;
+    color: white;
+    border: 2px solid rgb(200, 200, 200);
+}
+.middle-column{
+    flex:1.75;
+}
+
+.right-column, .middle-column {
+    display: flex;
+    flex-direction: column;
+}
+.right-column-top{
+    background-image: linear-gradient(to bottom, var(--gradient-color-start), var(--gradient-color-end));
+}
+.right-column-top, .right-column-bottom {
+    flex: 1;
+    border: 2px solid rgb(200, 200, 200);
+}
+
+.padding {
+    flex:2 !important;
+}
+/* styles for the equipbox */
+.middle-column > div{
+        display:flex;
+        flex:1;
+        flex-direction: row;
+        border-top: 2px solid rgb(200, 200, 200);
+}
+.equipWeap > div {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+}
+.middle-column > div .icon{
+    aspect-ratio: 1/1;
+    flex:0.5;
+}
+.middle-column > div .stats, .middle-column > div .skills{
+    flex: 2;
+}
+.middle-column > div .decos{
+    flex:2;
+}
