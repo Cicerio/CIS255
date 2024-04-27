@@ -1,16 +1,17 @@
 {
     "weapon":{
-        "type":"Charge Blade",
+        "type":"ChargeBlade",
         "name":"Hyperguard I",
         "rarity":1,
         "defenseBoost":0,
-        "damage":80,
+        "attack":80,
         "sharpness":"300",
         "affinity":0,
         "element":0,
         "phialType":"Impact Phial",
         "rampageSlots":1,
-        "rampageSkills":["Attack Boost I", "Affinity Boost I", "Defense Boost II"]
+        "rampageSkills":["Attack Boost I", "Affinity Boost I", "Defense Boost II"],
+        "decorations": [["", 0]]
     },
     "armor":{
         "head": {
@@ -24,8 +25,9 @@
                 "ice": 0,
                 "dragon": 0
             },
-            "skills": ["Divine Blessing", 1],
-            "slots": [0,0,0]
+            "skills": [["Divine Blessing", 1]],
+            "slots": [0,0,0],
+            "decorations": [["", 0]]
         },
         "chest": {
             "name": "Kamura Garb",
@@ -38,8 +40,9 @@
                 "ice": 0,
                 "dragon": 0
             },
-            "skills": [["Wirebug Whisperer", 1]],
-            "slots": [0,0,0]
+            "skills": [["Attack Boost", 2]],
+            "slots": [0,0,0],
+            "decorations": [["", 0]]
         },
         "arms": {
             "name": "Kamura Braces",
@@ -53,7 +56,8 @@
                 "dragon": 0
             },
             "skills": [["Heroics", 1]],
-            "slots": [0,0,0]
+            "slots": [0,0,0],
+            "decorations": [["", 0]]
         },
         "waist": {
             "name": "Kamura Obi",
@@ -67,12 +71,13 @@
                 "dragon": 0
             },
             "skills": [["Critical Eye", 1]],
-            "slots": [0,0,0]
+            "slots": [0,0,0],
+            "decorations": [["", 0]]
         },
         "legs": {
             "name": "Kamura Leggings",
             "rarity": 1,
-                "defense": {
+            "defense": {
                 "raw": 1,
                 "fire": 0,
                 "water": 0,
@@ -81,8 +86,15 @@
                 "dragon": 0
             },
             "skills": [["Wall Runner", 1]],
-            "slots": [0,0,0]
+            "slots": [0,0,0],
+            "decorations": [["", 0]]
         }
+    },
+    "talisman":{
+        "name":"Discipline Talisman",
+        "rarity":9,
+        "skills":[["Critical Eye", 5]],
+        "slots":[2, 0, 0],
+        "decorations": [["Critical Eye", 1, 2]]
     }
 }
-        
