@@ -1,4 +1,6 @@
-
+/**
+ * Loads the webpage, and reads the build JSON file
+ */
 // Define the path to the JSON file
 const jsonFilePath = 'mh-build1.json';
 
